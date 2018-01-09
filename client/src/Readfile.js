@@ -97,8 +97,13 @@ class ReadFile extends Component {
 				<h1>Records for Words</h1>
 				<button  onClick={this.getRecord} name="getrecords">Get Records</button>
 				<div className = 'tableclass'>
-				<tr><th>Word</th><th>Count</th></tr>
-				{(this.state.data == "")? 'No Records Available ' : this.renderHtml() }
+				<table>
+					<tbody>
+					<tr><th>Word</th><th>Count</th></tr>
+					{(this.state.data == "")? 'No Records Available!' : this.renderHtml()}
+					</tbody>
+				</table>
+				
 				</div>
 					
 			</div>

@@ -16,12 +16,12 @@ class RenderList extends Component {
 	
   render() {
 console.log(this.props.val);
-    return (   
+    return (
 				<tr>
 				<td>{this.props.val.name}</td>
 				<td>{this.props.val.total}</td>
 				</tr>
-    );
+			);
   }
 }
 
